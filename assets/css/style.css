@@ -1,0 +1,91 @@
+body, html {
+    margin-top: 40px;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul { list-style: none; padding-left: 5px; }
+a { color:white; text-decoration: none;}
+.bar {
+    background-color: #f9f9fb;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.main > picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1 {
+    text-align: center;
+}
+#anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+    position: sticky;
+    top: 25px;
+    max-height:300px;
+    background: #333;
+    border-radius: 5px;
+}
+
+#anchors h2 {
+    color: white;
+}
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+
+#bar {
+    position: sticky;
+    top: 25px;
+    background: #333;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    background-color: #333;
+    color: white;
+}
+
+
+picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
